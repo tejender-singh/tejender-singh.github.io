@@ -20,12 +20,33 @@ nav {
     flex: 1 0 auto;
   }
 
+  .red-button {
+    background-color: #758BFD;
+  }
+
+  .red-button:hover {
+    background-color: #9BABFD;
+    transform: scale(1.2);
+  }
+
+  .list-item {
+    opacity: 0.0;
+  }
+
+  .list-item:hover {
+    margin-top: 10px;
+    color: #758BFD;
+    transform: scale(1.2) translate(10%, 0%);
+    margin-bottom: 10px;
+  }
+
   .center-text {
     text-align: center;
   }
 
   .footer {
     background-color: #fff;
+    margin-bottom: 10px;
   }
 
   .code {
@@ -33,6 +54,11 @@ nav {
   }
 
   .social-link {
+    margin-left: 5vmin;
+    margin-right: 5vmin;
+  }
+
+  .social-link-image {
     height: 40px;
     color: #758BFD;
   }

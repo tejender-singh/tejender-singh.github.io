@@ -29,20 +29,26 @@
 
       <main>
         <div class="row">
-          <div class="col s2"></div>
+          <div class="col s0 m2"></div>
   
           <div class="col s6">
             <h4>
               Hey There!, I'm-
             </h4>
-            <h1 id="name">
-              
+            <h1 id="name">              
             </h1>
-            <h5>Bengaluru, India</h5>
-            <h5>Full Stack Developer</h5>
-            <h5>5 years of experience</h5>
+            <h5 class="Title"><b>Full Stack Developer</b> - 5 Years</h5>
+            <h6><i class="material-icons left">location_on</i> Bengaluru, India</h6>
+            <h5>Key Skills:</h5>
+            <ul id="skills-list">
+              <li id="list-item-1" class="list-item"> - Web Development – Angular, HTML, CSS, JavaScript, and TypeScript</li>
+              <li id="list-item-2" class="list-item"> - Backend Development – Java, .NET using C#</li>
+              <li id="list-item-3" class="list-item"> - Software Design – High level and low level</li>
+              <li id="list-item-4" class="list-item"> - Automation Testing – Selenium, Protractor and Silk Test</li>
+              <li id="list-item-5" class="list-item"> - Performance Testing – JMeter</li>
+            </ul>
           </div>
-          <div class="col s4 m3">
+          <div class="col s5 m2">
             <div class="card scale-transition">
               <div class="card-image">
                 <img src="images/dp.jpg">
@@ -50,24 +56,25 @@
             </div>
           </div>
         </div>  
+        <div class="center-text">
+          <a class="waves-effect waves-light btn red-button white-text"  href="docs/TEJENDER SINGH.pdf" target="_blank"><i class="material-icons left">download</i>Résumé</a>
+        </div>
       </main>
 
       <footer class="footer page-footer">
         <div class="center-text">
-          <div class="row">
-            <div class="col s1 offset-s4">
-              <a href="https://www.linkedin.com/in/tejenders/" target="_blank"><img class="social-link" src="images/linkedin.png"></a>
-            </div>
-            <div class="col s1">
-              <a href="https://github.com/tejender-singh" target="_blank"><img class="social-link" src="images/github.png"></a>
-            </div>
-            <div class="col s1">
-              <a href="https://www.instagram.com/tejender7.10/" target="_blank"><img class="social-link" src="images/instagram.png"></a>
-            </div>
-            <div class="col s1">
-              <a href="mailto:tejender@outlook.com" target="_blank"><img class="social-link" src="images/mail.png"></a>
-            </div>
-          </div>  
+          <a class="social-link" href="https://www.linkedin.com/in/tejenders/" target="_blank">
+            <img class="social-link-image" src="images/linkedin.png">
+          </a>
+          <a class="social-link" href="https://github.com/tejender-singh" target="_blank">
+            <img class="social-link-image" src="images/github.png">
+          </a>
+          <a class="social-link" href="https://www.instagram.com/tejender7.10/" target="_blank">
+            <img class="social-link-image" src="images/instagram.png">
+          </a>
+          <a class="social-link" href="mailto:tejender@outlook.com" target="_blank">
+            <img class="social-link-image" src="images/mail.png">
+          </a>
         </div>  
       </footer>
       <!--JavaScript at end of body for optimized loading-->
@@ -86,6 +93,16 @@
             document.getElementById('name').innerHTML = name;
           }
         },500);
+
+        for(let j=1;j<=5; j++){
+          setTimeout(() => {
+            for(let i=0; i<11; i++){
+              setTimeout(() => {
+                document.getElementById('list-item-'+j).style = 'opacity: '+i*0.1;            
+              }, i*50);
+            }          
+          }, 100*name.length + j*500);
+        }
       </script>
     </body>
   </html>
