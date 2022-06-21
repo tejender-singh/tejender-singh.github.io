@@ -1,0 +1,21 @@
+nav {
+    color: #fff;
+    background-color: #758BFD;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+  }
+
+  .code {
+    font-family: 'Courier New', Courier, monospace;
+  }
+/* 
+  .dp {
+    max-height: 50px;
+    max-width: 50px;
+  } */
+
+  .social-link {
+    max-height: 25px;
+    color: #758BFD;
+  }
