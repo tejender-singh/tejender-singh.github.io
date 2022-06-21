@@ -57,23 +57,23 @@
           </div>
         </div>  
         <div class="center-text">
-          <a class="waves-effect waves-light btn red-button white-text"  href="docs/TEJENDER SINGH.pdf" target="_blank"><i class="material-icons left">download</i>Résumé</a>
+          <a id="resume-button" class="waves-effect waves-light btn red-button white-text"  href="docs/TEJENDER SINGH.pdf" target="_blank"><i class="material-icons left">download</i>Résumé</a>
         </div>
       </main>
 
       <footer class="footer page-footer">
         <div class="center-text">
           <a class="social-link" href="https://www.linkedin.com/in/tejenders/" target="_blank">
-            <img class="social-link-image" src="images/linkedin.png">
+            <img id="social-link-image-1" class="social-link-image" src="images/linkedin.png">
           </a>
           <a class="social-link" href="https://github.com/tejender-singh" target="_blank">
-            <img class="social-link-image" src="images/github.png">
+            <img id="social-link-image-2" class="social-link-image" src="images/github.png">
           </a>
           <a class="social-link" href="https://www.instagram.com/tejender7.10/" target="_blank">
-            <img class="social-link-image" src="images/instagram.png">
+            <img id="social-link-image-3" class="social-link-image" src="images/instagram.png">
           </a>
           <a class="social-link" href="mailto:tejender@outlook.com" target="_blank">
-            <img class="social-link-image" src="images/mail.png">
+            <img id="social-link-image-4" class="social-link-image" src="images/mail.png">
           </a>
         </div>  
       </footer>
@@ -103,6 +103,36 @@
             }          
           }, 100*name.length + j*500);
         }
+
+        setTimeout(() => {
+          document.getElementById('social-link-image-1').style.transform = "scale(1.3)";
+
+          setTimeout(() => {
+            document.getElementById('social-link-image-1').style.transform = "";
+            document.getElementById('social-link-image-2').style.transform = "scale(1.3)";            
+          }, 300);
+
+          setTimeout(() => {
+            document.getElementById('social-link-image-2').style.transform = "";
+            document.getElementById('social-link-image-3').style.transform = "scale(1.3)";            
+          }, 300*2);
+
+          setTimeout(() => {
+            document.getElementById('social-link-image-3').style.transform = "";
+            document.getElementById('social-link-image-4').style.transform = "scale(1.3)";            
+          }, 300*3);
+
+          setTimeout(() => {
+            document.getElementById('social-link-image-4').style.transform = "";
+            document.getElementById('resume-button').style.transform = "scale(1.3)";            
+          }, 300*4);
+
+          setTimeout(() => {
+            document.getElementById('resume-button').style.transform = "";
+          }, 300*5);
+
+
+        }, 100*name.length + 3000);
       </script>
     </body>
   </html>
