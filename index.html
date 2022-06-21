@@ -80,6 +80,13 @@
             document.getElementById('name').innerHTML = i===name.length ?  name.slice(0,i) : name.slice(0,i)+'|';
           }, 100*(i+1));
         }
+        setInterval(()=>{
+          if(document.getElementById('name').innerHTML === name){
+            document.getElementById('name').innerHTML = name+ '|';
+          } else if (document.getElementById('name').innerHTML === name+'|'){
+            document.getElementById('name').innerHTML = name;
+          }
+        },500);
       </script>
     </body>
   </html>
