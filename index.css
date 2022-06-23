@@ -16,7 +16,6 @@ nav {
 
   body {
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
   }
 
@@ -51,7 +50,6 @@ nav {
   }
 
   .footer {
-    padding-top: 0px;
     background-color: #fff;
     margin-bottom: 10px;
   }
