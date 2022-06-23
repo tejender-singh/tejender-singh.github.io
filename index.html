@@ -29,24 +29,26 @@
 
       <main>
         <div class="row">
-          <div class="col s0 m2"></div>
+          <div class="col m2"></div>
   
           <div class="col s6">
-            <h4>
+            <h4 class="hello-message">
               Hey There!, I'm-
             </h4>
-            <h1 id="name">              
+            <h1 id="name" class="name">              
             </h1>
             <h5 class="Title"><b>Full Stack Developer</b> - 5 Years</h5>
             <h6><i class="material-icons left">location_on</i> Bengaluru, India</h6>
-            <h5>Key Skills:</h5>
-            <ul id="skills-list">
-              <li id="list-item-1" class="list-item"> - Web Development – Angular, HTML, CSS, JavaScript, and TypeScript</li>
-              <li id="list-item-2" class="list-item"> - Backend Development – Java, .NET using C#</li>
-              <li id="list-item-3" class="list-item"> - Software Design – High level and low level</li>
-              <li id="list-item-4" class="list-item"> - Automation Testing – Selenium, Protractor and Silk Test</li>
-              <li id="list-item-5" class="list-item"> - Performance Testing – JMeter</li>
-            </ul>
+            <div class="skills-list-desktop">
+              <h5>Key Skills:</h5>
+              <ul id="skills-list">
+                <li id="list-item-desktop-1" class="list-item"> - Web Development – Angular, HTML, CSS and JavaScript</li>
+                <li id="list-item-desktop-2" class="list-item"> - Backend Development – Java, .NET using C#</li>
+                <li id="list-item-desktop-3" class="list-item"> - Software Design – High level and low level</li>
+                <li id="list-item-desktop-4" class="list-item"> - Automation Testing – Selenium, Protractor and Silk Test</li>
+                <li id="list-item-desktop-5" class="list-item"> - Performance Testing – JMeter</li>
+              </ul>  
+            </div>
           </div>
           <div class="col s5 m2">
             <div class="card scale-transition">
@@ -56,8 +58,23 @@
             </div>
           </div>
         </div>  
+        <div class="row">
+          <div class="col s0 m1"></div>
+          <div class="col s10 m10">
+            <div class="skills-list-mobile">
+              <h5>Key Skills:</h5>
+              <ul id="skills-list">
+                <li id="list-item-mobile-1" class="list-item"> - Web Development – Angular, HTML, CSS and JavaScript</li>
+                <li id="list-item-mobile-2" class="list-item"> - Backend Development – Java, .NET using C#</li>
+                <li id="list-item-mobile-3" class="list-item"> - Software Design – High level and low level</li>
+                <li id="list-item-mobile-4" class="list-item"> - Automation Testing – Selenium, Protractor and Silk Test</li>
+                <li id="list-item-mobile-5" class="list-item"> - Performance Testing – JMeter</li>
+              </ul>  
+            </div>    
+          </div>
+        </div>
         <div class="center-text">
-          <a id="resume-button" class="waves-effect waves-light btn red-button white-text"  href="docs/TEJENDER SINGH.pdf" target="_blank"><i class="material-icons left">download</i>Résumé</a>
+          <a id="resume-button" class="waves-effect waves-light btn blue-button white-text"  href="docs/TEJENDER SINGH.pdf" target="_blank"><i class="material-icons left">download</i>Résumé</a>
         </div>
       </main>
 
@@ -98,7 +115,17 @@
           setTimeout(() => {
             for(let i=0; i<11; i++){
               setTimeout(() => {
-                document.getElementById('list-item-'+j).style = 'opacity: '+i*0.1;            
+                document.getElementById('list-item-desktop-'+j).style = 'opacity: '+i*0.1;            
+              }, i*50);
+            }          
+          }, 100*name.length + j*500);
+        }
+
+        for(let j=1;j<=5; j++){
+          setTimeout(() => {
+            for(let i=0; i<11; i++){
+              setTimeout(() => {
+                document.getElementById('list-item-mobile-'+j).style = 'opacity: '+i*0.1;            
               }, i*50);
             }          
           }, 100*name.length + j*500);

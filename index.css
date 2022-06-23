@@ -6,7 +6,11 @@ nav {
     line-height: 56px;
   }
 
-  h1 {
+  .hello-message {
+    font-size:6vmin;
+  }
+
+  .name {
     font-size:10vmin;
   }
 
@@ -20,11 +24,11 @@ nav {
     flex: 1 0 auto;
   }
 
-  .red-button {
+  .blue-button {
     background-color: #758BFD;
   }
 
-  .red-button:hover {
+  .blue-button:hover {
     background-color: #9BABFD;
     transform: scale(1.2);
   }
@@ -69,4 +73,37 @@ nav {
   
   .social-link-image:hover {
     transform: scale(1.2);
+  }
+
+  .skills-list-mobile {
+    visibility: hidden;
+    display: none;
+  }
+  .skills-list-desktop {
+    visibility: visible;
+    display: block;
+  }
+
+  @media screen and (max-width: 600px) {
+    .skills-list-mobile {
+      visibility: visible;
+      display: block;
+    }
+    .skills-list-desktop {
+      visibility: hidden;
+      display: none;
+    }
+    .hello-message {
+      font-size:5vmin;
+    }
+  
+    .name {
+      font-size:8vmin;
+      margin: 0px;
+    }
+
+    .Title{
+      font-size:5vmin;
+
+    }
   }
