@@ -55,7 +55,7 @@ nav {
     bottom: 0;
     width: 100%;
     background-color: #fff;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
   }
 
   .code {
@@ -107,6 +107,5 @@ nav {
 
     .Title{
       font-size:5vmin;
-
     }
   }
