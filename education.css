@@ -1,0 +1,20 @@
+main{
+    padding-bottom: 60px;
+  }
+    
+.education-list-item {
+    padding: 10px;
+    vertical-align: middle;
+  }
+  
+  .education-list-image{
+    height: 100%;
+    width: 100%;
+    -webkit-transition: .2s ease-out;
+    transition: .2s ease-out;
+  }
+  
+  .education-list-image:hover{
+    transform: scale(1.2);
+  }
+  

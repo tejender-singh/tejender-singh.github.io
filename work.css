@@ -1,48 +1,8 @@
-nav {
-  color: #fff;
-  background-color: #758BFD;
-  width: 100%;
-  height: 56px;
-  line-height: 56px;
-}
-
 main{
   padding-bottom: 60px;
 }
 
-.code {
-  font-family: 'Courier New', Courier, monospace;
-}
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #fff;
-  padding-bottom: 10px;
-}
-
-.center-text {
-  text-align: center;
-}
-
-
-.social-link {
-  margin-left: 5vmin;
-  margin-right: 5vmin;
-}
-
-.social-link-image {
-  height: 40px;
-  color: #758BFD;
-  -webkit-transition: .2s ease-out;
-  transition: .2s ease-out;
-}
-
-.social-link-image:hover {
-  transform: scale(1.2);
-}
 
 /* .work-card {
   animation-name: work-card;

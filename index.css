@@ -1,11 +1,3 @@
-nav {
-    color: #fff;
-    background-color: #758BFD;
-    width: 100%;
-    height: 56px;
-    line-height: 56px;
-  }
-
   .hello-message {
     font-size:6vmin;
   }
@@ -37,45 +29,10 @@ nav {
   }
 
   .list-item:hover {
-    /* margin-top: 10px; */
     color: #758BFD;
     -webkit-transition: .2s ease-out;
     transition: .2s ease-out;
     transform: scale(1.3) translate(10%, 0%);
-    /* margin-bottom: 10px; */
-  }
-
-  .center-text {
-    text-align: center;
-  }
-
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #fff;
-    padding-bottom: 10px;
-  }
-
-  .code {
-    font-family: 'Courier New', Courier, monospace;
-  }
-
-  .social-link {
-    margin-left: 5vmin;
-    margin-right: 5vmin;
-  }
-
-  .social-link-image {
-    height: 40px;
-    color: #758BFD;
-    -webkit-transition: .2s ease-out;
-    transition: .2s ease-out;
-  }
-  
-  .social-link-image:hover {
-    transform: scale(1.2);
   }
 
   .skills-list-mobile {
