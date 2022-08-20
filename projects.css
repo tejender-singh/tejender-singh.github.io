@@ -1,7 +1,39 @@
 .main-body{
-    text-align: center;
-    vertical-align: middle;
-    height: 100%;
-    width: 100%;
+    /* text-align: center;
+    vertical-align: middle; */
+    /* height: 100%; */
+    /* width: 100%; */
+    margin-bottom: 100px;
     /* align-content: center; */
+}
+
+.project-image{
+    max-height: 20vmax;
+    width: fit-content;
+}
+
+
+.card .card-image .card-title {
+    color: white;
+    background-color: rgba(100, 100, 100, 0.3);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    padding: 24px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #fafafa;
+    padding: 0;
+    max-height: 80%;
+    width: 55%;
+    margin: auto;
+    overflow-y: auto;
+    border-radius: 2px;
+    will-change: top, opacity;
 }

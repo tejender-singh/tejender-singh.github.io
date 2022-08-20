@@ -24,7 +24,7 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="work.html">Work</a></li>
               <li class="active"><a href="projects.html">Projects</a></li>
-              <li><a href="https://tejender7.wixsite.com/blog" target="_blank">Blog</a></li>
+              <li><a href="blog.html" target="_blank">Blog</a></li>
               <li><a href="education.html">Education</a></li>
             </ul>
           </div>
@@ -32,7 +32,110 @@
       </header>
 
       <main class="main-body">
-        I'll be adding my projects here soon..
+        <div class="row">
+          <div class="col s10 offset-s1 m4 offset-m1">
+            <div class="card">
+              <a class="modal-trigger" href="#modal1">
+                <div class="card-image">
+                  <img src="images/2048.png" class="project-image">
+                  <span class="card-title">2048 Clone</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light white" href="https://github.com/tejender-singh/2048"  target="_blank" ><img src="images/black-github.png"></a>
+                </div>
+              </a>
+              <div class="card-content">
+                <p>This is a clone of the famous 2048 game. Works on both mobile and desktop.</p> <br>
+                <div class="chip">
+                  <img class="social-link-image" src="images/javascript-logo.png" alt="Contact Person">
+                  JavaScript
+                </div>  
+                <div class="chip">
+                  <img class="social-link-image" src="images/html-logo.png" alt="Contact Person">
+                  HTML 5
+                </div>  
+                <div class="chip">
+                  <img class="social-link-image" src="images/css-logo.png" alt="Contact Person">
+                  CSS 3
+                </div>  
+
+              </div>
+              <div class="card-action">
+                <a class="modal-trigger" href="#modal1">PREVIEW PROJECT</a>
+                <a class="modal-trigger" href="https://tejender-singh.github.io/2048/" target="_blank">PLAY GAME</a>
+              </div>
+            </div>
+
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <h4>2048 Clone</h4>
+                <p>This is a clone of the famous 2048 game. Works on both mobile and desktop.<br>
+                  Check out the <b>github code <a href="https://github.com/tejender-singh/2048" target="_blank">here</a></b> 
+                  Or play the <b>game live <a href="https://tejender-singh.github.io/2048/" target="_blank">here</a></b>
+                </p>
+                <video class="responsive-video" controls>
+                  <source src="videos/2048.webm" type="video/webm">
+                </video>
+              </div>
+            </div>
+          </div>
+          <div class="col s10 offset-s1 m4 offset-m1">
+            <div class="card">
+              <a class="modal-trigger" href="#modal2">
+                <div class="card-image">
+                  <img src="images/stock-analyser.png" class="project-image">
+                  <span class="card-title">Stock Analyser</span>
+                  <a class="btn-floating halfway-fab waves-effect waves-light white" href="https://github.com/tejender-singh/stockAnalyser" target="_blank"><img src="images/black-github.png"></a>
+                </div>
+              </a>
+              <div class="card-content">
+                <p>This is a desktop application I have developed for my personal use.I analyse stocks frequently and I use tradingview.com for technical and screener.in for fundamental analysis. <br>
+                  This project lists the top 500 companies listed on National Stock Exchange and I can select the companies I want to analyse and trigger automation to open the chosen website for all the selected stocks. <br><br>
+                </p>
+                <div class="chip">
+                  <img class="social-link-image" src="images/javascript-logo.png" alt="Contact Person">
+                  JavaScript
+                </div>  
+                <div class="chip">
+                  <img class="social-link-image" src="images/angular-logo.png" alt="Contact Person">
+                  Angular
+                </div>  
+                <div class="chip">
+                  <img class="social-link-image" src="images/electron-logo.png" alt="Contact Person">
+                  Electron
+                </div>  
+                <div class="chip">
+                  <img class="social-link-image" src="images/webdriver-io-logo.png" alt="Contact Person">
+                  WebDriver IO
+                </div>  
+                <div class="chip">
+                  <img class="social-link-image" src="images/html-logo.png" alt="Contact Person">
+                  HTML 5
+                </div>  
+                <div class="chip">
+                  <img class="social-link-image" src="images/css-logo.png" alt="Contact Person">
+                  CSS 3
+                </div>  
+              </div>
+              <div class="card-action">
+                <a class="modal-trigger" href="#modal2">PREVIEW PROJECT</a>
+              </div>
+            </div>
+
+            <!-- Modal Structure -->
+            <div id="modal2" class="modal fixed-footer">
+              <div class="modal-content">
+                <h4>Stock Analyser</h4>
+                <p>This is a desktop application I have developed for my personal use.I analyse stocks frequently and I use tradingview.com for technical and screener.in for fundamental analysis. <br>
+                  This project lists the top 500 companies listed on National Stock Exchange and I can select the companies I want to analyse and trigger automation to open the chosen website for all the selected stocks. <br>
+                  Check out the <b>github code <a href="https://github.com/tejender-singh/stockAnalyser" target="_blank">here</a></b> 
+                </p>
+                <video class="responsive-video" controls>
+                  <source src="videos/stock-analyser.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
 
       <footer class="footer page-footer">
@@ -53,5 +156,11 @@
       </footer>
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+          document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems, {});
+  });
+      </script>
     </body>
   </html>
